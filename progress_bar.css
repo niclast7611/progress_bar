@@ -1,0 +1,38 @@
+#body{
+    text-align: center;
+}
+
+.body-container{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    margin: 10px auto;
+}
+
+.inputs{
+    margin: 10px 0;
+}
+
+.progress{
+    background-color: aqua;
+    border-radius: 13px;
+    width: 0%;
+}
+
+.progress-container{
+    width: 90vw;
+    height: 30px;
+    display: flex;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 13px;
+}
+
+.button{
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 6px;
+}

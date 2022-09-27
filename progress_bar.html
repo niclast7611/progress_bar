@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="progress_bar.css">
+
+    <title>Progress Bar</title>
+</head>
+<body id="body">
+    <h1>Progress Bar</h1>
+    <div class="progress-container">
+        <div class='progress'></div>
+    </div>
+<div class="body-container">
+    <label for="first_name">First Name</label>
+    <input type="text" name="first-name" id="first-name" class="inputs" />
+    <label for="last-name">Last Name</label>
+    <input type="text" name="last-name" id="last-name" class="inputs"/>
+    <label for="email">Email</label>
+    <input type="text" name="email" id="email" class="inputs"/>
+    <label for="password">Password</label>
+    <input type="text" name="password" id="password" class="inputs"/>  
+
+</div>
+<script>
+    
+    const move = (e) => {
+        if(e.target.value.length > 0)
+         document.getElementsByClassName('progress')[0].style.width = '25%'    
+    };
+
+    const fNameInput = document.getElementById("first-name").addEventListener('change', move);
+    const lNameInput = document.getElementById("last-name").addEventListener('change', move);
+    const emailInput = document.getElementById("email").addEventListener('change', move);
+    const passwordInput = document.getElementById("password").addEventListener('change', move);
+
+
+
+</script>
+</body>
+</html>
