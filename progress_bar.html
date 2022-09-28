@@ -25,18 +25,17 @@
 
 </div>
 <script>
-    
-    const move = (e) => {
-        if(e.target.value.length > 0)
-         document.getElementsByClassName('progress')[0].style.width = '25%'    
-    };
 
-    const fNameInput = document.getElementById("first-name").addEventListener('change', move);
-    const lNameInput = document.getElementById("last-name").addEventListener('change', move);
-    const emailInput = document.getElementById("email").addEventListener('change', move);
-    const passwordInput = document.getElementById("password").addEventListener('change', move);
+let number = 0
 
-
+    const fNameInput = document.getElementById("first-name").addEventListener('change', function(){
+        document.getElementsByClassName('progress')[0].style.width = `${number += 25}%` });
+    const lNameInput = document.getElementById("last-name").addEventListener('change', function(){
+        document.getElementsByClassName('progress')[0].style.width = `${number += 25}%` });
+    const emailInput = document.getElementById("email").addEventListener('change', function(){
+        document.getElementsByClassName('progress')[0].style.width = `${number += 25}%` });
+    const passwordInput = document.getElementById("password").addEventListener('change', function(){
+        document.getElementsByClassName('progress')[0].style.width = `${number += 25}%` });
 
 </script>
 </body>
